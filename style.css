@@ -7,6 +7,9 @@
 .img-max {
 	max-height: 400px;
 }
+.sixmargin {
+	margin-top: 6px;
+}
 .thumbnail {
 	width: 16rem;
 	height: width;
@@ -20,27 +23,44 @@
 .collapser {
 	color: black;
 	cursor: pointer;
+	margin: auto;
 	text-align: left;
-	width: 100%;
+	width: 70%;
 	padding: 16px;
+	opacity: 85%;
 }
 .collapserContent {
 	padding: 0 16px;
 	max-height: 0;
+	margin: auto;
+	width: 70%;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 	background-color: rgb(240, 240, 240);
 }
+.open, .collapser:hover {
+	opacity: 100%;
+	color: black;
+}
+.collapser:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: black;
+  float: right;
+  margin-left: 5px;
+}
+.open:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
 .animator {
-	background-color: rgba(33, 94, 248, 0.5);
+	background-color: rgba(33, 94, 248, 0.8);
 }
 .candyland {
-	background-color: rgba(234, 40, 40, 0.5); 
+	background-color: rgba(234, 40, 40, 0.8); 
 }
 .cuPaper {
-	background-color: rgba(207, 184, 124, 0.5); 
+	background-color: rgba(207, 184, 124, 0.8); 
 }
-.open, .collapser:hover {
-	opacity: 50%;
-	color: black;
+.manville {
+	background-color: rgba(29, 67, 173, 0.8); 
 }
