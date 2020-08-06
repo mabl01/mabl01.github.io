@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>The Life of Brian</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<ul class="navbar-nav">
+			<li class="nav-item" title="Back to Home">
+				<a class="nav-link" href="../about/about.html">Home</a>
+			</li>
+			<li class="nav-item" title="View my projects!">
+				<a class="nav-link" href="../projects/projects.html">Projects</a>
+			</li>
+			<li class="nav-item" title="Read my ramblings!">
+				<a class="nav-link disabled" href="../blog/blog.html">Blog</a>
+			</li>
+			<li class = "nav-item" title="Contact me!">
+				<a class="nav-link disabled" href="../contact/contact.html">Contact</a>
+			</li>
+	</nav>
+	
+	<body>
+		<div class="jumbotron text-center" style="background-image: url(amazingmtns.jpg)">
+			<h1 class="text-white display-3" title="Welcome to my website!">My Projects</h1>
+		</div>
+		
+		<div class="center">
+			<h1><b>What I've Done</b></h1>
+		</div>
+		<div class="center">
+			<p><em>Here's some of my featured projects, past and present!</em></p>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<button class="collapser animator"><b>Animator</b></button>
+				<div class="collapserContent">
+					<div class="container">
+						<div class="row">
+							<div class = "col-sm-4">
+								<a href="../projects/specifics/excellence.html" title="Click to go to this project's page!">
+									<img src="excellence.jpg" class="img-thumbnail img-fluid thumbnail" alt="Excellence Animator">
+								</a>
+							</div>
+							<div class = "col-sm-8">
+								<h4>Animation Software using Java Swing<em></em></h4>
+								<p>A partner and I created an animation software that accepts a text format and can return a visual animation (using Swing) or its SVG representation. This was originally assigned as an assignment for CS3500.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<button class="collapser candyland"><b>Candyland</b></button>
+				<div class="collapserContent">
+					<div class="container">
+						<div class="row">
+							<div class = "col-sm-4">
+							<!-- change this -->
+								<a href="../projects/specifics/excellence.html" title="Click to go to this project's page!">
+									<img src="excellence.jpg" class="img-thumbnail img-fluid thumbnail" alt="Excellence Animator">
+								</a>
+							</div>
+							<div class = "col-sm-8">
+								<h4>Candyland Mod for Minecraft 1.15 <em>(in progress)</em></h4>
+								<p>After learning Java in my college courses, I decided to apply it to an independent project without guidance from course syllabi/staff.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<button class="collapser cuPaper"><b>X. Ren<b></button>
+				<div class="collapserContent">
+					<div class="container">
+						<div class="row">
+							<div class = "col-sm-4">
+							<!-- change this -->
+								<a href="../projects/specifics/excellence.html" title="Click to go to this project's page!">
+									<img src="excellence.jpg" class="img-thumbnail img-fluid thumbnail" alt="Excellence Animator">
+								</a>
+							</div>
+							<div class = "col-sm-8">
+								<h4>Co-author of a Biochemistry Research Paper<em></em></h4>
+								<p>I had the opportunity to contribute to a graduate research group at the University of Colorado, Denver studying protein assembly.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	
+		<script>
+		var collapsers = document.getElementsByClassName("collapser");
+		var i;
+		for (i = 0; i < collapsers.length; i++) {
+			collapsers[i].addEventListener("click",
+				function() {
+					this.classList.toggle("open");
+					var content = this.nextElementSibling;
+					if (content.style.maxHeight) {
+						content.style.maxHeight = null;
+					} else {
+						content.style.maxHeight = content.scrollHeight + "px";
+					}
+				});
+		}
+		</script>
+	</body>
+</html>

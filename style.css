@@ -1,0 +1,46 @@
+.center {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img-max {
+	max-height: 400px;
+}
+.thumbnail {
+	width: 16rem;
+	height: width;
+	float: right;
+}
+.jumbotron {
+	background-size: cover;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+.collapser {
+	color: black;
+	cursor: pointer;
+	text-align: left;
+	width: 100%;
+	padding: 16px;
+}
+.collapserContent {
+	padding: 0 16px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: rgb(240, 240, 240);
+}
+.animator {
+	background-color: rgba(33, 94, 248, 0.5);
+}
+.candyland {
+	background-color: rgba(234, 40, 40, 0.5); 
+}
+.cuPaper {
+	background-color: rgba(207, 184, 124, 0.5); 
+}
+.open, .collapser:hover {
+	opacity: 50%;
+	color: black;
+}
