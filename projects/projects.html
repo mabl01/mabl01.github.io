@@ -30,12 +30,6 @@
 	</nav>
 	
 	<body>
-	<!--
-		<div class="jumbotron text-center" style="background-image: url(amazingmtns.jpg)">
-			<h1 class="text-white display-3" title="Welcome to my website!">My Projects</h1>
-		</div>
-	-->
-		
 		<div class="center" style="margin-top:12px;">
 			<h1><b>What I've Done...</b></h1>
 		</div>
@@ -48,12 +42,31 @@
 			<div class="collapserContent">
 				<div class="container">
 					<div class="row">
-						<div class = "col-sm-4">
+						<div class = "col-sm-6">
+						<!--
 							<a href="../projects/specifics/excellence.html" title="Click to go to this project's page!">
-								<img src="excellence.jpg" class="img-thumbnail img-fluid thumbnail" alt="Excellence Animator">
+								<img src="excellence.jpg" class="img-thumbnail img-fluid" alt="Excellence Animator">
 							</a>
+						-->
+							<a class="prev" onclick="changeSlide(-1)"><b>&#8249;</b></a>
+							<a class="next" onclick="changeSlide(1)"><b>&#8250;</b></a>
+							<div class="container" style="position:relative;">
+								<div class="projectSlide">
+									<div class="slideText"></div>
+									<img src="excellencepics/excellence.jpg" style="width:100%">
+								</div>
+								<div class="projectSlide">
+									<div class="slideText"></div>
+									<img src="excellencepics/a.jpg" style="width:100%">
+								</div>
+								<div class="projectSlide">
+									<div class="slideText"></div>
+									<img src="excellencepics/a1.jpg" style="width:100%">
+								</div>
+							</div>
+							
 						</div>
-						<div class = "col-sm-8">
+						<div class = "col-sm-6">
 							<h4>Animation Software using Java Swing<em></em></h4>
 							<p>A partner and I created an animation software that accepts a text format and can return a visual animation (using Swing) or its SVG representation. This was originally assigned as an assignment for CS3500.</p>
 						</div>
@@ -70,7 +83,7 @@
 						<div class = "col-sm-4">
 						<!-- change this -->
 							<a href="../projects/specifics/excellence.html" title="Click to go to this project's page!">
-								<img src="excellence.jpg" class="img-thumbnail img-fluid thumbnail" alt="Excellence Animator">
+								<img src="excellence.jpg" class="img-thumbnail img-fluid" alt="Excellence Animator">
 							</a>
 						</div>
 						<div class = "col-sm-8">
@@ -90,7 +103,7 @@
 						<div class = "col-sm-4">
 						<!-- change this -->
 							<a href="../projects/specifics/excellence.html" title="Click to go to this project's page!">
-								<img src="excellence.jpg" class="img-thumbnail img-fluid thumbnail" alt="Excellence Animator">
+								<img src="excellence.jpg" class="img-thumbnail img-fluid" alt="Excellence Animator">
 							</a>
 						</div>
 						<div class = "col-sm-8">
@@ -110,7 +123,7 @@
 						<div class = "col-sm-4">
 						<!-- change this -->
 							<a href="../projects/specifics/excellence.html" title="Click to go to this project's page!">
-								<img src="excellence.jpg" class="img-thumbnail img-fluid thumbnail" alt="Excellence Animator">
+								<img src="excellence.jpg" class="img-thumbnail img-fluid" alt="Excellence Animator">
 							</a>
 						</div>
 						<div class = "col-sm-8">
@@ -182,6 +195,7 @@
 		</div>
 	
 		<script>
+		<!-- code for the collapsing buttons -->
 		var collapsers = document.getElementsByClassName("collapser");
 		var i;
 		for (i = 0; i < collapsers.length; i++) {
@@ -196,6 +210,30 @@
 					}
 				});
 		}
+		
+		<!-- code for the project slideshows -->
+		var slideIndex = 1;
+		showSlide(slideIndex);
+		
+		function changeSlide(n) {
+			showSlide(slideIndex += n);
+		}
+		<!-- may need to add second argument to take in class name for multiple slideshows -->
+		function showSlide(n) {
+			var ind;
+			var slides = document.getElementsByClassName("projectSlide");
+			if (n > slides.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = slides.length
+			}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slides[slideIndex - 1].style.display = "block";
+		}
+			
 		</script>
 	</body>
 </html>

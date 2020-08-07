@@ -10,23 +10,22 @@
 .sixmargin {
 	margin-top: 6px;
 }
-.thumbnail {
-	width: 16rem;
-	height: width;
-	float: right;
-}
 .jumbotron {
 	background-size: cover;
 	padding-top: 10%;
 	padding-bottom: 10%;
 }
+
+/*
+COLLAPSING BUTTONS RELATED STYLE
+*/
 .collapser {
 	color: black;
 	cursor: pointer;
 	margin: auto;
 	text-align: left;
 	width: 70%;
-	padding: 16px;
+	padding: 32px;
 	opacity: 85%;
 }
 .collapserContent {
@@ -50,9 +49,10 @@
   margin-left: 5px;
 }
 .open:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: '\2796'; /* Unicode character for "minus" sign (-) */
 }
 .animator {
+	background-image: url("projects/bannerpics/excellencebanner.jpg");
 	background-color: rgba(33, 94, 248, 0.8);
 }
 .candyland {
@@ -63,4 +63,40 @@
 }
 .manville {
 	background-color: rgba(29, 67, 173, 0.8); 
+}
+.marblesolitaire {
+	background-color: rgba(100, 100, 100, 0.8);
+}
+
+/*
+PROJECT SLIDESHOWS RELATED STYLE
+*/
+.projectSlide {
+	display: none;
+}
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	width: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 24px;
+	font-size: 12px;
+	
+}
+.prev {
+	left: 0;
+	border-radius: 0 3px 3px 0;
+}
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+	background-color: black;
+}
+.slideText {
+	color: white;
+	font-size: 12px;
+	position: absolute;
 }
