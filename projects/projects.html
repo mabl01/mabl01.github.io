@@ -30,7 +30,7 @@
 	</nav>
 	
 	<body>
-		<div class="center" style="margin-top:12px;">
+		<div class="center" style="margin-top:12px;" id="projects">
 			<h1><b>What I've Done...</b></h1>
 		</div>
 		<div class="center">
@@ -43,33 +43,38 @@
 				<div class="container">
 					<div class="row">
 						<div class = "col-sm-6">
-						<!--
-							<a href="../projects/specifics/excellence.html" title="Click to go to this project's page!">
-								<img src="excellence.jpg" class="img-thumbnail img-fluid" alt="Excellence Animator">
-							</a>
-						-->
-							<a class="prev" onclick="changeSlide(-1)"><b>&#8249;</b></a>
-							<a class="next" onclick="changeSlide(1)"><b>&#8250;</b></a>
+							<a class="prev" onclick="changeSlide(-1, 'excellenceSlide')" style="z-index: 1;"><b>&#8249;</b></a>
+							<a class="next" onclick="changeSlide(1, 'excellenceSlide')" style="z-index: 1;"><b>&#8250;</b></a>
 							<div class="container" style="position:relative;">
-								<div class="projectSlide">
-									<div class="slideText"></div>
+								<div class="projectSlide excellenceSlide">
+									<div class="slideText">General Interface</div>
 									<img src="excellencepics/excellence.jpg" style="width:100%">
 								</div>
-								<div class="projectSlide">
-									<div class="slideText"></div>
-									<img src="excellencepics/a.jpg" style="width:100%">
+								<div class="projectSlide excellenceSlide">
+									<div class="slideText">Playback Demo</div>
+									<img src="excellencepics/playbackdemo.gif" style="width:100%">
 								</div>
-								<div class="projectSlide">
-									<div class="slideText"></div>
-									<img src="excellencepics/a1.jpg" style="width:100%">
+								<div class="projectSlide excellenceSlide">
+									<div class="slideText">Shape Editing Options</div>
+									<img src="excellencepics/editshapedemo.gif" style="width:100%">
+								</div>
+								<div class="projectSlide excellenceSlide">
+									<div class="slideText">5000-Shape Animation Excerpt</div>
+									<img src="excellencepics/bigbangdemo.gif" style="width:100%">
 								</div>
 							</div>
-							
 						</div>
 						<div class = "col-sm-6">
-							<h4>Animation Software using Java Swing<em></em></h4>
-							<p>A partner and I created an animation software that accepts a text format and can return a visual animation (using Swing) or its SVG representation. This was originally assigned as an assignment for CS3500.</p>
+							<p>I created Excellence, an animation software, from the ground up with a partner using Java and Java Swing. Excellence can take in animation 
+							instructions in text format and supports several forms of output, including visual animation and SVG format. The software is also capable of 
+							live animation editing, custom playback, layers, and more!</p>
+							<p>This project was originally an assignment for Northeastern’s Object-Oriented Design course, and has seen some non-assigned additions 
+							and refinements since the assignment.</p>
 						</div>
+					</div>
+					<br>
+					<div class="row center">
+						<a href="#privateCode">Source Code</a>
 					</div>
 				</div>
 			</div>
@@ -80,16 +85,18 @@
 			<div class="collapserContent">
 				<div class="container">
 					<div class="row">
-						<div class = "col-sm-4">
-						<!-- change this -->
-							<a href="../projects/specifics/excellence.html" title="Click to go to this project's page!">
-								<img src="excellence.jpg" class="img-thumbnail img-fluid" alt="Excellence Animator">
-							</a>
+						<div class = "col-sm-6">
+							<img src="candylandpics/candylandlogo.jpg" class="img-thumbnail img-fluid" alt="Candyland">
 						</div>
-						<div class = "col-sm-8">
-							<h4>Candyland Mod for Minecraft 1.15 <em>(in progress)</em></h4>
-							<p>After learning Java in my college courses, I decided to apply it to an independent project without guidance from course syllabi/staff.</p>
+						<div class = "col-sm-6">
+							<p>I’ve always loved Minecraft – it’s a central part of my childhood! Inspired by fan-made mods that I used to (and still do!) install to enhance 
+							the game, I decided to try creating a mod myself. I am leveraging the Java I have learned so far at Northeastern to create this independent project. 
+							This is my first foray into practical, out-of-course programming from the ground up!</p>
+							<p>This mod is currently a work in progress; it is not yet deliverable/installable for outside use. This page will update along with the project!</p>
 						</div>
+					</div>
+					<div class="row center">
+						<br><a href="https://github.com/mabl01/mc1.15-candyland" target="_blank">Source Code</a>
 					</div>
 				</div>
 			</div>
@@ -100,42 +107,80 @@
 			<div class="collapserContent">
 				<div class="container">
 					<div class="row">
-						<div class = "col-sm-4">
-						<!-- change this -->
-							<a href="../projects/specifics/excellence.html" title="Click to go to this project's page!">
-								<img src="excellence.jpg" class="img-thumbnail img-fluid" alt="Excellence Animator">
-							</a>
+						<div class = "col-sm-6">
+							<a class="prev" onclick="changeSlide(-1, 'marbleSlide')" style="z-index: 1;"><b>&#8249;</b></a>
+							<a class="next" onclick="changeSlide(1, 'marbleSlide')" style="z-index: 1;"><b>&#8250;</b></a>
+							<div class="container" style="position:relative;">
+								<div class="projectSlide marbleSlide">
+									<div class="slideText"></div>
+									<img src="excellencepics/excellence.jpg" style="width:100%">
+								</div>
+								<div class="projectSlide marbleSlide">
+									<div class="slideText"></div>
+									<img src="excellencepics/a.jpg" style="width:100%">
+								</div>
+								<div class="projectSlide marbleSlide">
+									<div class="slideText"></div>
+									<img src="excellencepics/a1.jpg" style="width:100%">
+								</div>
+							</div>
 						</div>
-						<div class = "col-sm-8">
-							<h4>Candyland Mod for Minecraft 1.15 <em>(in progress)</em></h4>
-							<p>After learning Java in my college courses, I decided to apply it to an independent project without guidance from course syllabi/staff.</p>
+						<div class = "col-sm-6">
+							<p>Using Java and the command prompt, I built ASCII marble solitaire! The program is able to take in various command-line arguments (type of board, size, starting location) 
+							and user input for moves to run a corresponding custom solitaire game.</p>
 						</div>
 					</div>
+				</div>
+				<div class="row center">
+					<br><a href="#privateCode">Source Code</a>
 				</div>
 			</div>
 		</div>
 		
 		<div class="row sixmargin">
-			<button class="collapser cuPaper"><b>Contributor on Graduate Biochemisty Research Paper</b></button>
+			<button class="collapser cuPaper"><b>Co-author on Graduate Biochemisty Research Paper</b></button>
 			<div class="collapserContent">
 				<div class="container">
 					<div class="row">
-						<div class = "col-sm-4">
-						<!-- change this -->
-							<a href="../projects/specifics/excellence.html" title="Click to go to this project's page!">
-								<img src="excellence.jpg" class="img-thumbnail img-fluid" alt="Excellence Animator">
-							</a>
+						<div class = "col-sm-6">
 						</div>
-						<div class = "col-sm-8">
-							<h4>Co-author of a Biochemistry Research Paper<em></em></h4>
-							<p>I had the opportunity to contribute to a graduate research group at the University of Colorado, Denver studying protein assembly.</p>
+						<div class = "col-sm-6">
+							<p>I worked with Professor Xiaojun Ren and his team of graduate biochemistry researchers at the University of Colorado, Denver and have the humble honor of being named a contributor 
+							on our paper on protein assembly, as well as second contributor on a related 
+							<a href="specifics/poster.pdf" target="_blank">research poster</a> presented at a state research convention! </p>
+							<p>The paper is published in the Journal of Biological Chemistry (JBC) and can be found 
+							<a href="https://www.jbc.org/content/294/5/1451.long" target="_blank">here</a>!</p>
 						</div>
 					</div>
+				</div>
+				<div class="row center">
+					<br><a href="https://www.jbc.org/content/294/5/1451.long" target="_blank">Link to Paper</a>
 				</div>
 			</div>
 		</div>
 		
-		<div class="center" style="margin-top:12px;">
+		<div class="row sixmargin">
+			<button class="collapser thisSite"><b>This Website!</b></button>
+			<div class="collapserContent">
+				<div class="container">
+					<div class="row">
+						<div class = "col-sm-6">
+							<iframe src="../about/about.html" title="My Website" height="400px" style="width:100%;"></iframe>
+						</div>
+						<div class = "col-sm-6">
+							<p>I built this website from scratch using HTML, Bootstrap, JavaScript, and GitHub website hosting. No templates or builder sites (e.g. Weebly) were used. The entirety of this website’s 
+							code and my knowledge of it was self-taught, not a part of a course or guided project. It ain’t much but I’m proud of it!</p>
+						</div>
+					</div>
+				</div>
+				<div class="row center">
+					<!-- change this link to github soon -->
+					<br><a href="#privateCode" target="_blank">Source Code</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="center" style="margin-top:12px;" id="experiences">
 			<h1><b>And Where I've Been!</b></h1>
 		</div>
 		<div class="center">
@@ -147,12 +192,14 @@
 			<div class="collapserContent">
 				<div class="container">
 					<div class="row">
-						<div class = "col-sm-4">
+						<div class = "col-sm-6">
 							<p>...<p>
 						</div>
-						<div class = "col-sm-8">
-							<h4>The Manville School (Judge Baker Children's Center)</h4>
-							<p>...</p>
+						<div class = "col-sm-6">
+							<p>I joined the Manville School in Boston during January 2020 as a Science, Technology, and Engineering intern. The Manville School is a specialized K-11 school that caters to kids with special 
+							learning needs. My responsibilities include data analysis on standardized test scores and compiling topic- and grade-specific online education resources. As the COVID pandemic set in mid-March, 
+							the latter part of my job became even more crucial to my role. I helped smooth the transition into online learning and provided easy access to remote learning material.</p>
+							<p>The staff at Manville are all amazing and have so much passion in what they do! I am truly grateful for the opportunity to meet people and work towards a common goal together.</p>
 						</div>
 					</div>
 				</div>
@@ -160,16 +207,16 @@
 		</div>
 		
 		<div class="row sixmargin">
-			<button class="collapser"><b>Swedish Medical Center</b></button>
+			<button class="collapser swedish"><b>Swedish Medical Center</b></button>
 			<div class="collapserContent">
 				<div class="container">
 					<div class="row">
-						<div class = "col-sm-4">
+						<div class = "col-sm-6">
 							<p>...<p>
 						</div>
-						<div class = "col-sm-8">
-							<h4>The Manville School (Judge Baker Children's Center)</h4>
-							<p>...</p>
+						<div class = "col-sm-6">
+							<p>I volunteered at Swedish Medical Center in Englewood, Colorado for two years. As a general volunteer, I was mainly responsible for staffing the front desk, but also took on responsibilities like 
+							mail delivery, wheelchair management, supply upkeep, and other necessary tasks. I learned a boatload about hospital workings, professionalism, and empathy during my weekly shifts.</p>
 						</div>
 					</div>
 				</div>
@@ -177,19 +224,61 @@
 		</div>
 		
 		<div class="row sixmargin">
-			<button class="collapser"><b>Prof. X. Ren's Biochem Lab @ the University of Colorado, Denver</b></button>
+			<button class="collapser cuLab"><b>Prof. X. Ren's Biochem Lab @ the University of Colorado, Denver</b></button>
 			<div class="collapserContent">
 				<div class="container">
-					
+					<div class="row">
+						<div class = "col-sm-6">
+							<p>...<p>
+						</div>
+						<div class = "col-sm-6">
+							<p>I joined Professor Xiaojun Ren’s biochemistry lab as a research assistant in December 2016 and contributed for over two and a half years. I worked alongside Prof. Ren’s graduate research group to 
+							study protein formation and its effects on human processes. My contributions included performing lab procedures, running data analysis, and helping others with big tasks. Everyone was awesome, and I 
+							loved researching alongside the crew! I learned an invaluable amount, from science to lab work to life lessons.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		
 		<div class="row sixmargin">
-			<button class="collapser"><b>Prof. N. Jackson's O-Chem Lab @ Michigan State University</b></button>
+			<button class="collapser hshsp"><b>Prof. N. Jackson's O-Chem Lab @ Michigan State University</b></button>
 			<div class="collapserContent">
 				<div class="container">
-					
+					<div class="row">
+						<div class = "col-sm-6">
+							<p>...<p>
+						</div>
+						<div class = "col-sm-6">
+							<p>In the Summer of 2018, I joined Professor Ned Jackson’s organic chemistry lab at Michigan State University for an intensive, 7-week summer research program. The opportunity was via the High School 
+							Honors Science Program @ MSU (a competitive program with a ~6% acceptance rate). Me and my 23 fellow HSHSP 2019 researchers worked full-time, five days a week in our respective labs. I studied methoxy 
+							cleavage pathways using NMR and o-chem techniques to further the lab’s green energy research! My findings have since been used to build new inquiries and solve lingering questions.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="center" style="margin-top:60px;" id="privateCode">
+			<h1><b>Private Source Code Info</b></h1>
+		</div>
+		<div class="center">
+			<p><em>Info about academic integrity & how to access private code!</em></p>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class = "col-sm-8">
+					<p>If a link to a project's source code redirected you here, please contact me and I can temporarily open the code 
+					to be viewable! I'm available through
+					<a href="https://www.linkedin.com/in/brian-ma-b4ba21168/" target="_blank">LinkedIn</a> and 
+					<a href="mailto: brian80126@gmail.com">email!</a></p>
+					<p><em>Why is this necessary?</em>
+					In order to honor academic integrity at Northeastern University, some project source code cannot be publicly 
+					available. This applies to anything that is the intellectual property of Northeastern, which in this case is 
+					any project that originates from a course assignment. This applies to the Excellence Animator and Marble Solitaire.</p>
+				</div>
+				<div class = "col-sm-4">
+				<img src="khoury.jpg" class="img-thumbnail img-fluid" alt="Northeastern Khoury College">
 				</div>
 			</div>
 		</div>
@@ -213,15 +302,15 @@
 		
 		<!-- code for the project slideshows -->
 		var slideIndex = 1;
-		showSlide(slideIndex);
+		showSlide(slideIndex, "excellenceSlide");
+		showSlide(slideIndex, "marbleSlide");
 		
-		function changeSlide(n) {
-			showSlide(slideIndex += n);
+		function changeSlide(n, slideName) {
+			showSlide(slideIndex += n, slideName);
 		}
 		<!-- may need to add second argument to take in class name for multiple slideshows -->
-		function showSlide(n) {
-			var ind;
-			var slides = document.getElementsByClassName("projectSlide");
+		function showSlide(n, slideName) {
+			var slides = document.getElementsByClassName(slideName);
 			if (n > slides.length) {
 				slideIndex = 1
 			}
