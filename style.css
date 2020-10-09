@@ -46,6 +46,10 @@ COLLAPSING BUTTONS RELATED STYLE
 	transition: max-height 0.2s ease-out;
 	background-color: rgb(240, 240, 240);
 }
+.contentPadding {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
 .open, .collapser:hover {
 	opacity: 100%;
 	color: black;
